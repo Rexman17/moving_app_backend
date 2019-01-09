@@ -41,7 +41,7 @@ class Api::V1::ItemsController < ApplicationController
    private
 
    def item_params
-     params.permit(:name, :image, :user_id, :box_id)
+     params.permit(:name, :image, :box_id)
    end
 
    def find_item

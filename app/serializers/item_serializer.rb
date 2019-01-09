@@ -1,5 +1,4 @@
 class ItemSerializer < ActiveModel::Serializer
-  attributes :id, :name, :image, :user_id, :box_id
-  belongs_to :user
-  belongs_to :box, optional: true
+  attributes :id, :name, :image, :box_id
+  belongs_to :box
 end

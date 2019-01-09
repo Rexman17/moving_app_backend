@@ -42,7 +42,7 @@ class Api::V1::MovesController < ApplicationController
    private
 
    def move_params
-     params.permit(:name, :date, :user_id)
+     params.permit(:name, :date, :user_id, :icon)
    end
 
    def find_move
