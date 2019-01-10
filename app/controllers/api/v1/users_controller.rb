@@ -29,6 +29,18 @@ class Api::V1::UsersController < ApplicationController
   #   @user.destroy
   # end
 
+  # WITHOUT AUTH
+  def create
+   @user = User.new(user_params)
+   # byebug
+   if @user.valid?
+     @user.save
+     render json: @user, status: :accepted
+   else
+     render json: { errors: @user.errors.full_messages }, status: :unprocessible_entity
+   end
+ end
+
  def update
    @user.update(user_params)
    if @user.save
