@@ -35,8 +35,8 @@ Item.create(name: "Pillows", image: "https://www.greatsleep.com/on/demandware.st
 Item.create(name: "Stuffed Animals", image: "https://s7d9.scene7.com/is/image/JCPenney/DP0817201617082870M?resmode=sharp2&op_sharpen=1&wid=550&hei=550", box_id: 2)
 
 # First Move Third Box
-Item.create(name: "Pillows", image: "https://www.greatsleep.com/on/demandware.static/-/Sites-tbp-master-catalog/default/dw9ff5c1cf/product-images/pillows/nautica/down-alt-pillow-2-pack-na-91644/nautica-down-alternative-pillow-2-pack_91644-icon-2500x2500.jpg", box_id: 3)
-Item.create(name: "Stuffed Animals", image: "https://s7d9.scene7.com/is/image/JCPenney/DP0817201617082870M?resmode=sharp2&op_sharpen=1&wid=550&hei=550", box_id: 3)
+Item.create(name: "409", image: "https://lh3.googleusercontent.com/proxy/BHKQlL9_Z3W5ar7R6n8bE0iO6kuZCUuEFtP3307rYKjMXNb70REFZWcvnQEFCL4mNiUHFA1R7qmdn4nTxUvhG1UxwJO1abQQCGXE5fFjNmzFB0PDd6UwCh0p7A8-vX15fHggIikhp_Uxns_wndyU5G13MyJp-XT2pGy9CaZingBaP1nbKiI=s500-pd-e365-rw-pc0xffffff", box_id: 3)
+Item.create(name: "Paper Towels", image: "https://d2ln0cvn4pv5w2.cloudfront.net/unsafe/1024x800/filters:quality(100):max_bytes(200000):fill(white)/https://dcmzfk78s4reh.cloudfront.net/1527181942604.jpg", box_id: 3)
 
 # Second Move First Box
 Item.create(name: "Favorite Wooden Spoon", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/9389152_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&$filtersm$", box_id: 4)

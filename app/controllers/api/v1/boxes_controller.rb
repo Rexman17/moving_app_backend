@@ -3,7 +3,9 @@ class Api::V1::BoxesController < ApplicationController
   before_action :find_box, only: [:update, :show]
 
    def index
-     @boxes = Box.all
+     @move = Move.find(params[:move_id])
+     @boxes = @move.boxes
+     # @boxes = Box.all
      render json: @boxes
    end
 

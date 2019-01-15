@@ -2,8 +2,18 @@ class Api::V1::ItemsController < ApplicationController
   before_action :find_item, only: [:update, :show]
 
    def index
-     @items = Item.all
+     # @items = Item.all
+     @box = Box.find(params[:box_id])
+     @items = @box.items
+     # @boxes = Box.all
+     # render json: @boxes
      render json: @items
+   end
+
+   def allItemsInAMove
+     @move = Move.find(params[:move_id])
+     @boxes = @move.boxes
+     # @items = @boxes.map((box) => box.items)
    end
 
    def show
