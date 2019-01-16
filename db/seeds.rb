@@ -12,7 +12,7 @@ Move.delete_all
 Box.delete_all
 Item.delete_all
 
-User.create(name: "Ali", username: "Ali Stone", password: "Rex")
+User.create(name: "Ali", username: "Ali", password: "111")
 
 Move.create(name: "Leaving for College", date: Date.new(2019, 8, 12), user_id: 1)
 Move.create(name: "Moving to NYC", date: Date.new(2019, 2, 17), user_id: 1)

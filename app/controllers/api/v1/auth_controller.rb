@@ -16,7 +16,7 @@ class Api::V1::AuthController < ApplicationController
   private
 
   def user_login_params
-    # params { user: {username: 'Ali Stone', password: 'Rex' } }
+    # params { user: {username: 'Ali', password: '111' } }
     params.require(:user).permit(:username, :password)
   end
 end

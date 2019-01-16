@@ -3,7 +3,10 @@ class Api::V1::MovesController < ApplicationController
   before_action :find_move, only: [:update, :show]
 
    def index
-     @moves = Move.all
+     @user = User.find(params[:user_id])
+     @moves = @user.moves
+     #
+     # @moves = Move.all
      render json: @moves
    end
 
