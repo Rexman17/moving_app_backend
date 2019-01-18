@@ -35,9 +35,9 @@ class Api::V1::UsersController < ApplicationController
    end
  end
 
- # def destroy
- #   @user.destroy
- # end
+ def destroy
+   @user.destroy
+ end
 
  private
 
